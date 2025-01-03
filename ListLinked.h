@@ -24,7 +24,7 @@ public:
     }
 
     // Sobrecarga del operador []
-    T operator[](int pos) override {
+    T operator[](int pos) {
         if (pos < 0 || pos >= n) {
             throw std::out_of_range("Posición fuera de rango");
         }
